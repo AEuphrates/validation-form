@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <h2>Join with us!</h2>
+        <div class="username">
+          <label for="usernames">Your username</label>
+          <input type="text" class="usernames" placeholder="username" />
+
+          <small class="username-error"
+            >Username must be at least 3 characters
+          </small>
+        </div>
+        <div class="email">
+          <label for="email">Your E-mail</label>
+          <input type="text" class="emails" placeholder="email" />
+          <small class="email-error">error</small>
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input type="password" class="passwords" placeholder="password" />
+          <small class="password-error"
+            >Password must be at least 6 characters
+          </small>
+        </div>
+        <div class="password2">
+          <label for="password">Password Again</label>
+          <input
+            type="password"
+            class="passwords2"
+            placeholder="password again"
+          />
+          <small class="password2-error">Passwords do NOT match</small>
+        </div>
+        <button class="button" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
